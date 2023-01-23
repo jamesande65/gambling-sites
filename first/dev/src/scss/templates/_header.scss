@@ -1,0 +1,53 @@
+// @import 'reset';
+// @import 'media';
+// @import 'global';
+// @import 'icons';
+
+// @import 'includes/plugins';
+
+.header {
+    position: relative;
+    box-shadow: inset 0 -1px 0 0 #f2f5f9;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #000;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+
+    &-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-branding {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-menu {
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 0;
+            margin: 0 20px;
+            list-style: none;
+        }
+
+        li {
+            margin: 0 5px;
+            font-size: 2em;
+            a {
+                color: #fff;
+            }
+        }
+    }
+}
+
+.logo {
+    img {
+        max-height: 100px;
+    }
+}

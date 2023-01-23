@@ -1,0 +1,19 @@
+// @import 'reset';
+// @import 'media';
+// @import 'global';
+// @import 'icons';
+
+// @import 'includes/plugins';
+
+.footer {
+	height: 1px;
+	display: table-row;
+    font-size: .9em;
+    background: #26252d;
+    color: #fff;
+
+    &-inner {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
