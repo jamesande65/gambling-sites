@@ -15,17 +15,16 @@
     background-repeat: no-repeat;
     margin-bottom: 30px;
     @media (max-width: 768px) {
-        min-height: 95px;
-
-}
+        height: 100px;
+    }
 
     &-inner {
         display: flex;
         align-items: center;
         justify-content: space-between;
-            @media (max-width: 768px) {
-                padding-top: 2cqh;
-        
+
+        @media (max-width: 768px) {
+            padding-top: 2cqh;
         }
 
     }
@@ -41,13 +40,11 @@
                 width: 28cqw;
                 padding: 2cqw 1cqh;
                 text-align: center;
-        
-        }
+            }
             @media (max-width: 375px) {
                 width: 33cqw;
         
-        }
-
+            }
         }
     }
     .burger{
@@ -56,6 +53,7 @@
         cursor: pointer;
         transition: all ease 1s;
         transform: rotate(0deg);
+
         @media (max-width: 768px) {
             display: block;
 
@@ -63,7 +61,7 @@
         
     }
     .burger img{
-        width: 8cqw;
+        width: 6cqw;
         
     }
     .burgerActive{
@@ -73,7 +71,6 @@
     }
 
     &-menu {
-
         ul {
             display: flex;
             align-items: center;
@@ -86,43 +83,42 @@
                 position: absolute;
                 text-align: center;
                 transition: all ease 1.5s;
-                padding-top: 25px;
+                // padding-top: 25px;
                 width: 45cqw;
                 height: fit-content;
                 left: -50cqw;
-                top: 110px;
+                top: 100px;
                 margin: 0;
                 background-color: gray;
                 z-index: 2;
                 opacity: 0.85;
-
-	}
+	        }
             @media (max-width: 378px) {
                 top: 100px;
-
-        }
+            }
             @media (max-width: 320px) {
                 top: 115px;
-
-    }
+            }
         }
 
         li {
             margin: 0 5px;
             font-size: 2cqw;
+
             a {
                 color: #26eef4;
             }
-            @media (max-width: 768px) {
-                display: block; ////
-                font-size: 4cqw;
-                padding: 30px 0;
 
-	}
+            @media (max-width: 768px) {
+                display: block;
+                font-size: 4cqw;
+                padding: 20px 0;
+
+	        }
             @media (max-width: 378px) {
                 font-size: 6cqw;
 
-        }
+            }
         }
     }
     .headerMenuActive ul {
@@ -134,9 +130,9 @@
 .logo {
     img {
         width: 20cqw;
-            @media (max-width: 768px) {
-                width: 35cqw;
         
+        @media (max-width: 768px) {
+            width: 35cqw;
         }
     }
 }
