@@ -14,17 +14,41 @@
     border-bottom: 1px solid #26eef4;
     background-repeat: no-repeat;
     margin-bottom: 30px;
+    @media (max-width: 768px) {
+        min-height: 95px;
+
+}
 
     &-inner {
         display: flex;
         align-items: center;
         justify-content: space-between;
+            @media (max-width: 768px) {
+                padding-top: 2cqh;
+        
+        }
+
     }
 
     &-branding {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    &-button {
+        .btn{
+            @media (max-width: 768px) {
+                width: 28cqw;
+                padding: 2cqw 1cqh;
+                text-align: center;
+        
+        }
+            @media (max-width: 375px) {
+                width: 33cqw;
+        
+        }
+
+        }
     }
     .burger{
         display: none;
@@ -64,15 +88,23 @@
                 transition: all ease 1.5s;
                 padding-top: 25px;
                 width: 45cqw;
-                height: 35cqh;
+                height: fit-content;
                 left: -50cqw;
-                top: 100px;
+                top: 110px;
                 margin: 0;
                 background-color: gray;
                 z-index: 2;
                 opacity: 0.85;
 
 	}
+            @media (max-width: 378px) {
+                top: 100px;
+
+        }
+            @media (max-width: 320px) {
+                top: 115px;
+
+    }
         }
 
         li {
@@ -87,6 +119,10 @@
                 padding: 30px 0;
 
 	}
+            @media (max-width: 378px) {
+                font-size: 6cqw;
+
+        }
         }
     }
     .headerMenuActive ul {
@@ -98,6 +134,10 @@
 .logo {
     img {
         width: 20cqw;
+            @media (max-width: 768px) {
+                width: 35cqw;
+        
+        }
     }
 }
 
