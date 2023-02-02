@@ -1,0 +1,28 @@
+// @import 'reset';
+// @import 'media';
+// @import 'global';
+// @import 'icons';
+
+// @import 'includes/plugins';
+
+.main {
+
+    &-inner {
+        padding-top: 30px;
+        padding-bottom: 100px;
+    }
+    figure{
+        text-align: center;
+            
+    }
+    @media (min-width: 769px) {
+		.container{
+            max-width: 80cqw;
+        }
+        figure{
+            img{
+                width: 80%;
+            }
+        }
+	}
+}
