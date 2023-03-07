@@ -11,15 +11,32 @@
         padding-top: 30px;
         padding-bottom: 100px;
     }
-    figure{
-        text-align: center;
-            
+
+    article {
+        p {
+            display: flex;
+        }
+
+        .btn {
+            align-self: center;
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            text-indent: 0;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
     }
+
     @media (min-width: 769px) {
 		.container{
             max-width: 80cqw;
         }
-        figure{
+
+        article {
             img{
                 width: 80%;
             }
