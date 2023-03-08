@@ -42,4 +42,13 @@
             }
         }
 	}
+
+    @media (max-width: 768px) {
+        article {
+            img{
+                width: 100% !important;
+                height: auto !important;
+            }
+        }
+    }
 }
