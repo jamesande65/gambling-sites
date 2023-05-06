@@ -43,7 +43,7 @@
             }
             @media (max-width: 375px) {
                 width: 33cqw;
-        
+
             }
         }
     }
@@ -58,11 +58,11 @@
             display: block;
 
         }
-        
+
     }
     .burger img{
         width: 6cqw;
-        
+
     }
     .burgerActive{
         transition: all ease 1s;
@@ -130,7 +130,7 @@
 .logo {
     img {
         width: 20cqw;
-        
+
         @media (max-width: 768px) {
             width: 35cqw;
         }
@@ -145,4 +145,11 @@
     opacity: 0.2;
     top: 0;
     z-index: 1;
+}
+
+#lang-select {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 30px;
 }
