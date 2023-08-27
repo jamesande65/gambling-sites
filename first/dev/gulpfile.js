@@ -13,7 +13,8 @@ gulpif = require('gulp-if');
 
 connect.server({
 	root: 'dist',
-	livereload: true
+	livereload: true,
+	port: 3000
 });
 
 function html() {
@@ -25,7 +26,7 @@ function html() {
 
 //start handlebars
 let handlebars_options = {
-	ignorePartials: true, //ignores the unknown footer2 partial in the handlebars template, defaults to false 
+	ignorePartials: true, //ignores the unknown footer2 partial in the handlebars template, defaults to false
 	batch : ['src/layouts/partials'],
 	helpers : {
 		//тут могут быть хелперы (примеры http://handlebarsjs.com/expressions.html)
@@ -60,7 +61,7 @@ function css() {
 		.pipe(concat('_plugins.scss'))
 		.pipe(cleanCSS())
 		.pipe(dest('src/scss/includes/'))
-		
+
 };
 
 function scss() {
