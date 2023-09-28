@@ -1,0 +1,72 @@
+// @import 'reset';
+// @import 'media';
+// @import 'global';
+// @import 'icons';
+
+// @import 'includes/plugins';
+
+.main {
+    margin: 0;
+    height: 100%;
+    // padding: 80px 10px 40px;
+    // padding: 80px 10px 0;
+    // background-image: url(../images/logo-bg.webp);
+    background-size: 50px;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: repeat;
+
+    background-color: $main_bg;
+    // background-image: url(../images/logo-big.webp);
+    background-size: 600px;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    article {
+        min-height: 100%;
+        margin: 80px 0 0;
+
+        figure {
+            margin: 0;
+            text-align: center;
+        }
+    }
+
+	@media screen and (max-width: 991px){
+		padding-bottom: 10px;
+	}
+
+    p {
+        margin-bottom: 20px;
+        font-size: 15px;
+        line-height: 1.9em;
+        font-weight: 400;
+    }
+
+    &-title {
+        padding: 30px;
+        background-color: gray;
+
+        h1 {
+            margin: 0;
+            color: var(--main-accent-color);
+        }
+    }
+}
+
+.main-wrapper {
+    border-radius: 10px;
+    min-height: 100%;
+    color: $main_color;
+    background-color: rgba(255, 255, 255, 0.94);
+}
+
+#anchors-list {
+    & + nav {
+        display: none;
+    }
+    &:checked + nav {
+        display: block;
+    }
+}

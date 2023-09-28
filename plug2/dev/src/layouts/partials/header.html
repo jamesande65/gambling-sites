@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{pageTitle}}</title>
+        <link rel="icon" type="image/x-icon" href="fortunetiger.ico">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+        <style>
+            :root {
+                /* --main-accent-color:#368013;
+                --additional-accent-color:#1d5509; */
+                --main-accent-color: #f69a0c;
+                --additional-accent-color: #d00e1d;
+            }
+        </style>
+        <link rel="stylesheet" type="text/css" href="css/all.css" media="all">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="header js-header">
+                <a href="/" title="pageTitle" class="logo">
+                    <img src="./images/logo.webp" alt="pageTitle" class="logo-img" width="70" height="70">
+                </a>
+                <div class="menu">
+
+                    {{> small/header-menu pageTitle=pageTitle}}
+
+                    <div class="mobile-menu-icon js-mobile-menu-toggle">
+                        <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 6H20M4 12H20M4 18H20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
