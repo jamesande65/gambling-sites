@@ -1,0 +1,3 @@
+[submodule "plug2/dev/dist"]
+  path = plug2/dev/dist
+  url = https://github.com/jamesande65/plug2.git
