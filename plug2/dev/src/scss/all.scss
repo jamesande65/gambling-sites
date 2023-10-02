@@ -256,6 +256,242 @@ ul,ol {
 		}
 	}
 }
+.user{
+	margin: 5vh 0;
+	.user-wrapper{
+		display: flex;
+		justify-content: flex-start;
+		padding: 15px;
+		border: 1px solid gray;
+		border-radius: 15px;
+		.user-photo{
+			width: 15vw;
+		
+		}
+		.user-description{
+			width: 100vw;
+			padding: 0 2vw 0s 0;
+			.user-name{
+				h3{
+					color: red;
+				text-decoration: underline;
+
+				}
+				
+			}
+		}
+	}
+}
+
+
+
+// Author page
+.author-page{
+	padding: 0 0 7vh;
+	.author-wrapper{
+		background-color: gray;
+		padding: 2vw  2vw 2vw 0;
+		margin: 2vw 0 0;
+		border: 1px solid gray;
+		display: flex;
+		justify-content: space-evenly;
+		.author-photo{
+			display: inherit;
+			flex-direction: column;
+			padding: 0 1vw;
+			align-items: center;
+			width: 20vw;
+	
+			img{
+				display: inherit;
+				width: 20vw;
+			}
+			.author-links{
+				flex-direction: column;
+				font-size: 2vw;
+				.link-title{
+					display: inline-block;
+	
+					h5{
+						font-size: 25px;
+						margin: unset;
+					}
+	
+				}
+				
+				.link{
+					font-size: 25px;
+					display: inline-block;
+					padding-top: 2vh;
+				}
+			}
+		}
+		.author-description{
+			position: relative;
+			background-color: var(--main-accent-color);
+			width: 60vw;
+			padding: 1vw 2vw ;
+			.profile{
+				h5{
+					padding-top: 1vh;
+					font-size: 1.3vw;
+					margin: 0;
+				}
+			}
+			.profile-text{
+				p{
+				font-size: 15px;
+	
+	
+				}
+			}
+		}
+	}
+	.author-posts{
+		border-top: 1px solid var(--main-accent-color);
+		background-color: gray;
+		padding: 5vh 0;
+		.posts-title{
+			padding: 0vh 2vw 0;
+			h2{
+				margin-top: 0;
+			}
+		}
+		.posts-history{
+			padding: 0 2vw;
+			.history-item{
+				padding: 0.5vw ;
+				display: inline-block;
+				a{
+					font-size: 25px;
+
+				}
+				span{
+					font-size: 25px;
+				}
+			}
+			
+		}
+	}
+}
+
+// Promo code block
+.promo-code{
+	background-color: rgba(218, 218, 218, 0.6);
+	padding: 1vw;
+
+	.promo-wrapper{
+		display: flex;
+		// justify-content: flex-start;
+		justify-content: space-around;
+		align-items: center;
+		flex-direction: initial;
+		border: 1px solid gray;
+		background-color: white;
+		border-radius: 5px;
+		.promo-block{
+			padding: 1vw;
+			.logo{
+				img{
+					max-width: 6vw;
+				}
+			}
+			.title{
+
+				h5{
+					font-size: 1vw;
+					color: rgb(55,0, 131);
+					margin-bottom: unset;
+				}
+				h3{
+					font-size: 1.5vw;
+				}
+			}
+			.stars{
+				display: flex;
+    			align-items: center;
+				img{
+					width:  1.5vw;
+				}
+				.rate{
+					display: inline-block;
+				}
+			}
+			.promo-title{
+				font-size: 1.5vw;
+			}
+			.promo-anchor{
+				width: fit-content;
+				background-color: white;
+				position: relative;
+				left: 3vw;
+				top: 1vh;
+				z-index: 1;
+				padding: 0 1vw;
+				span{
+					font-size: 0.7vw;
+					color: green;
+				}
+			}
+			.promo-btn{
+				position: relative;
+				justify-content: center;
+				display: flex;
+				align-items: center;
+				border: 1px dashed green;
+				padding: 1vw;
+				border-radius: 2vw;
+				width: 20vw;
+				.copy-btn{
+					display: inherit;
+					position: absolute;
+					right: 1vw;
+					img{
+						width: 2vw
+					}
+				}
+			}
+			.option-item{
+				display: flex;
+				align-items: center;
+				margin: 2vh 0;
+				span{
+					padding-left: 0.5vw;
+				}
+				img{
+					width: 1.5vw;
+				}
+			}
+		}
+		.promo-logo{
+			min-width: fit-content;
+		}
+		.activate-promo{
+			max-width: 22vw;
+			position: relative;
+
+			
+		}
+		.promo-option{
+			padding: 1.2vw 0.5vw 1.2vw 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		.promo-send{
+
+			.send-btn{
+				background-color: red;
+				color: wheat;
+				padding: 1vh 2vw;
+				font-size: 1vw;
+			}
+			
+		}
+	}
+	
+}
+
 
 
 
