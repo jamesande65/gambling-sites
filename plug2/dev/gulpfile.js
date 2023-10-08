@@ -7,7 +7,7 @@ rename = require('gulp-rename'),
 autoprefixer = require('gulp-autoprefixer'),
 connect = require('gulp-connect'),
 livereload = require('gulp-livereload'),
-sass = require('gulp-sass'),
+// sass = require('sass'),
 gulpif = require('gulp-if');
 
 
@@ -25,7 +25,7 @@ function html() {
 
 //start handlebars
 let handlebars_options = {
-	ignorePartials: true, //ignores the unknown footer2 partial in the handlebars template, defaults to false 
+	ignorePartials: true, //ignores the unknown footer2 partial in the handlebars template, defaults to false
 	batch : ['src/layouts/partials'],
 	helpers : {
 		//тут могут быть хелперы (примеры http://handlebarsjs.com/expressions.html)
@@ -59,23 +59,23 @@ function css() {
 	return src('src/css/**/*.css')
 		.pipe(concat('_plugins.scss'))
 		.pipe(dest('src/scss/includes/'))
-		
+
 };
 
-function scss() {
-	return src('src/scss/**/*.scss')
-		.pipe(sass({
-			outputStyle: 'expanded',
-			indentWidth: 1,
-			indentType: 'tab'
-		}).on('error', sass.logError))
-		.pipe(autoprefixer({
-			Browserslist: ['last 2 versions'],
-			cascade: true
-		}))
-		.pipe(dest('dist/css/'))
-		.pipe(connect.reload());
-};
+// function scss() {
+// 	return src('src/scss/**/*.scss')
+// 		.pipe(sass.compile({
+// 			outputStyle: 'expanded',
+// 			indentWidth: 1,
+// 			indentType: 'tab'
+// 		}).on('error', sass.logError))
+// 		.pipe(autoprefixer({
+// 			Browserslist: ['last 2 versions'],
+// 			cascade: true
+// 		}))
+// 		.pipe(dest('dist/css/'))
+// 		.pipe(connect.reload());
+// };
 
 function js_plugins() {
 	return src(['src/js/**/*.js', '!' + 'src/js/main.js']) //исключить файл main.js
@@ -92,7 +92,7 @@ function js_main() {
 
 async function asyncAwaitTask() {
 	watch('src/css/**/*.css', css);
-	watch('src/scss/**/*.scss', scss);
+	// watch('src/scss/**/*.scss', scss);
 	watch('src/*.html', html);
 	watch('src/layouts/*.html', handlebars_main);
 	watch('src/layouts/partials/*.html', handlebars_partials);

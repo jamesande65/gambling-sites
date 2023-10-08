@@ -266,7 +266,7 @@ ul,ol {
 		border-radius: 15px;
 		.user-photo{
 			width: 15vw;
-		
+
 		}
 		.user-description{
 			width: 100vw;
@@ -277,7 +277,7 @@ ul,ol {
 				text-decoration: underline;
 
 				}
-				
+
 			}
 		}
 	}
@@ -301,7 +301,7 @@ ul,ol {
 			padding: 0 1vw;
 			align-items: center;
 			width: 20vw;
-	
+
 			img{
 				display: inherit;
 				width: 20vw;
@@ -311,14 +311,14 @@ ul,ol {
 				font-size: 2vw;
 				.link-title{
 					display: inline-block;
-	
+
 					h5{
 						font-size: 25px;
 						margin: unset;
 					}
-	
+
 				}
-				
+
 				.link{
 					font-size: 25px;
 					display: inline-block;
@@ -341,8 +341,8 @@ ul,ol {
 			.profile-text{
 				p{
 				font-size: 15px;
-	
-	
+
+
 				}
 			}
 		}
@@ -370,7 +370,7 @@ ul,ol {
 					font-size: 25px;
 				}
 			}
-			
+
 		}
 	}
 }
@@ -446,6 +446,7 @@ ul,ol {
 					display: inherit;
 					position: absolute;
 					right: 1vw;
+					cursor: pointer;
 					img{
 						width: 2vw
 					}
@@ -470,7 +471,7 @@ ul,ol {
 			max-width: 22vw;
 			position: relative;
 
-			
+
 		}
 		.promo-option{
 			padding: 1.2vw 0.5vw 1.2vw 0;
@@ -486,10 +487,10 @@ ul,ol {
 				padding: 1vh 2vw;
 				font-size: 1vw;
 			}
-			
+
 		}
 	}
-	
+
 }
 
 
