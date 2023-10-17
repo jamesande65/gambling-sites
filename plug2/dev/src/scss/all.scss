@@ -256,8 +256,9 @@ ul,ol {
 		}
 	}
 }
+
 .user{
-	margin: 5vh 0;
+	margin: 20px 0 0;
 	.user-wrapper{
 		display: flex;
 		justify-content: flex-start;
@@ -287,87 +288,116 @@ ul,ol {
 
 // Author page
 .author-page{
-	padding: 0 0 7vh;
+	margin: 0 0 40px;
 	.author-wrapper{
 		background-color: gray;
-		padding: 2vw  2vw 2vw 0;
+		padding: 10px;
 		margin: 2vw 0 0;
 		border: 1px solid gray;
 		display: flex;
-		justify-content: space-evenly;
 		.author-photo{
 			display: inherit;
 			flex-direction: column;
-			padding: 0 1vw;
+			margin-right: 10px;
 			align-items: center;
-			width: 20vw;
-
+			width: 200px;
+			flex-shrink: 0;
 			img{
 				display: inherit;
-				width: 20vw;
+				width: 100%;
 			}
 			.author-links{
 				flex-direction: column;
-				font-size: 2vw;
+				font-size: 20px;
 				.link-title{
 					display: inline-block;
 
 					h5{
-						font-size: 25px;
 						margin: unset;
 					}
 
 				}
 
 				.link{
-					font-size: 25px;
 					display: inline-block;
 					padding-top: 2vh;
 				}
+
+				@media screen and (max-width: 991px){
+					font-size: 16px;
+				}
+			}
+
+			@media screen and (max-width: 991px){
+				margin-bottom: 20px;
 			}
 		}
 		.author-description{
 			position: relative;
 			background-color: var(--main-accent-color);
-			width: 60vw;
 			padding: 1vw 2vw ;
+			flex-shrink: 1;
 			.profile{
 				h5{
 					padding-top: 1vh;
-					font-size: 1.3vw;
+					font-size: 24px;
 					margin: 0;
+
+					@media screen and (max-width: 991px){
+						font-size: 18px;
+					}
 				}
 			}
 			.profile-text{
 				p{
-				font-size: 15px;
+					font-size: 15px;
 
-
+					@media screen and (max-width: 991px){
+						font-size: 12px;
+					}
 				}
 			}
+		}
+
+		@media screen and (max-width: 991px){
+			flex-direction: column;
+			align-items: center;
 		}
 	}
 	.author-posts{
 		border-top: 1px solid var(--main-accent-color);
 		background-color: gray;
-		padding: 5vh 0;
+		padding: 20px;
 		.posts-title{
-			padding: 0vh 2vw 0;
+			// padding: 0vh 2vw 0;
 			h2{
 				margin-top: 0;
+				font-size: 20px;
+
+				@media screen and (max-width: 991px){
+					font-size: 16px;
+				}
 			}
 		}
-		.posts-history{
-			padding: 0 2vw;
+		.posts-history {
+			// padding: 0 2vw;
 			.history-item{
-				padding: 0.5vw ;
+				// padding: 0.5vw ;
 				display: inline-block;
-				a{
-					font-size: 25px;
+				a {
+					font-size: 20px;
 
+					@media screen and (max-width: 991px){
+						font-size: 16px;
+					}
 				}
+
 				span{
-					font-size: 25px;
+					font-size: 20px;
+
+					@media screen and (max-width: 991px){
+						font-size: 16px;
+					}
 				}
 			}
 
@@ -379,6 +409,7 @@ ul,ol {
 .promo-code{
 	background-color: rgba(218, 218, 218, 0.6);
 	padding: 1vw;
+	margin: 20px 0;
 
 	.promo-wrapper{
 		display: flex;
